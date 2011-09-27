@@ -18,8 +18,12 @@ end
 
 # Quick test
 get '/' do
-  "Congradulations!
-   You're running a Sinatra application on Heroku!"
+  "<html>
+  <head></head>
+  <body>
+  Congradulations!
+   You're running a Sinatra application on Heroku!
+   </body></html>"
 end
 
 # Test at <appname>.heroku.com
@@ -29,5 +33,5 @@ end
 # application with sensitive information
 
 # get '/env' do
-#   ENV.inspect
+  ENV.inspect
 # end
