@@ -7,7 +7,6 @@
 #
 require 'rubygems'
 require 'sinatra'
-require 'time'
 require 'json'
 
 configure :production do
