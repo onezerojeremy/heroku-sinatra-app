@@ -8,7 +8,6 @@
 require 'rubygems'
 require 'sinatra'
 require 'time'
-require 'httparty'
 require 'json'
 
 configure :production do
