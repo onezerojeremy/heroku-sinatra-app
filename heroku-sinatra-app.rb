@@ -33,5 +33,5 @@ end
 # application with sensitive information
 
 # get '/env' do
-  ENV.inspect
+#  ENV.inspect
 # end
