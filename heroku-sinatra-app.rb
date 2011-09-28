@@ -7,6 +7,9 @@
 #
 require 'rubygems'
 require 'sinatra'
+require 'time'
+require 'httparty'
+require 'json'
 
 configure :production do
   # Configure stuff here you'll want to
@@ -26,6 +29,15 @@ get '/' do
    </body></html>"
 end
 
+
+post '/commit' do
+  push = JSON.parse(request.body.read)
+  repo = push["repository"]
+  repo_name = repo["name"].downcase
+  
+"yup that did it"  
+end
+
 # Test at <appname>.heroku.com
 
 # You can see all your app specific information this way.
@@ -35,3 +47,4 @@ end
 # get '/env' do
 #  ENV.inspect
 # end
+
