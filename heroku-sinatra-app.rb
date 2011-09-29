@@ -22,7 +22,7 @@ get '/' do
   "<html>
   <head></head>
   <body>
-  Congradulations!
+  Congradulatddions!
    You're running a Sinatra application on Heroku!
    </body></html>"
 end
